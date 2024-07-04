@@ -54,13 +54,19 @@ The following table lists the configurable parameters of the Orchestrator chart 
 | `rhdhPlugins.notifications.package` |  | `"plugin-notifications-dynamic@0.2.0-rc.0-0"` |
 | `rhdhPlugins.notifications.integrity` |  | `"sha512-wmISWN02G4OiBF7y8Jpl5KCbDfhzl70s+r0h2tdVh1IIwYmojH5pqXFQAhDd3FTlqYc8yqDG8gEAQ8v66qbU1g=="` |
 | `rhdhPlugins.notifications_backend.package` |  | `"plugin-notifications-backend-dynamic@0.2.0-rc.0-0"` |
-| `rhdhPlugins.notifications_backend.integrity` |  | `"sha512-2Eqi1SWIy1vIWcR0hjSCfRP2w9z+qFdpKsB3dmbssv4Pg98AFj41LYlrTLscHri7am6cd4xe1fEb7gJGqbNQiQ=="` |
+| `rhdhPlugins.notifications_backend.integrity` |  | `"sha512-CHTNYVGWPxT94viabzCqxKIkDxflium9vkgh9Emu+3SuJSEsrZ6G+U1UZgpQ4gO03oOeiTm3xsoTg/AfKGf7CQ=="` |
 | `rhdhPlugins.signals.package` |  | `"plugin-signals-dynamic@0.0.5-rc.0-0"` |
 | `rhdhPlugins.signals.integrity` |  | `"sha512-5Iwp9gF6VPiMLJ5NUw5s5Z17AuJ5XYS97wghNTfcmah/OFxTmgZHWxvhcRoXDRQvyj4nc/gOZes74kp6kZ9XDg=="` |
 | `rhdhPlugins.signals_backend.package` |  | `"plugin-signals-backend-dynamic@0.1.3-rc.0-0"` |
 | `rhdhPlugins.signals_backend.integrity` |  | `"sha512-LlkM2Mf2QTndsS6eBzyXDhJmRTHLpAku3hhlvWhtQChSLTFCtNGRTIQA5WHG7NqLH0QqBz+UcEjX7Vca82QKKg=="` |
 | `rhdhPlugins.notifications_email.package` |  | `"plugin-notifications-backend-module-email-dynamic@0.0.0-rc.0-0"` |
 | `rhdhPlugins.notifications_email.integrity` |  | `"sha512-TikxFBxBHKJYZy8go+Mw+7yjfSJILgXjr4K0C0+tnKyMOn+OqIX6K8c1fq7IdXto3fftQ+mmCrBqJem25JjVnA=="` |
+| `rhdhPlugins.notifications_email.hostname` | SMTP server hostname | `"my-smtp-server"` |
+| `rhdhPlugins.notifications_email.port` | SMTP server port | `587` |
+| `rhdhPlugins.notifications_email.username` | SMTP username | `"my-username"` |
+| `rhdhPlugins.notifications_email.password` | SMTP password | `"my-password"` |
+| `rhdhPlugins.notifications_email.sender` | the email sender address | `"sender@mycompany.com"` |
+| `rhdhPlugins.notifications_email.reply_to` | reply-to address | `"no-reply@mycompany.com"` |
 | `postgres.serviceName` | The name of the Postgres DB service to be used by platform services. Cannot be empty. | `"sonataflow-psql-postgresql"` |
 | `postgres.serviceNamespace` | The namespace of the Postgres DB service to be used by platform services. | `"sonataflow-infra"` |
 | `postgres.authSecret.name` | name of existing secret to use for PostgreSQL credentials. | `"sonataflow-psql-postgresql"` |
