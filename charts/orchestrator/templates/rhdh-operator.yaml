@@ -16,6 +16,9 @@ spec:
         - name: app-config-rhdh-catalog
     dynamicPluginsConfigMapName: dynamic-plugins-rhdh
     extraEnvs:
+      envs:
+      - name: NODE_TLS_REJECT_UNAUTHORIZED
+        value: "0"
       secrets:
         - name: {{ .Values.rhdhOperator.secretRef.name }}
     replicas: 1
